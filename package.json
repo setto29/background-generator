@@ -1,0 +1,17 @@
+{
+  "name": "background-generator",
+  "homepage": "https://setto29.github.io/background-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+    "build": "browserify script.js > bundle.js && live-server" 
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
